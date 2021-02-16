@@ -16,8 +16,11 @@ a {
 
  /* header section */
 .nav {
+    position: fixed;
+    top: 0%;
     padding: 0 24px;
     height: 64px;
+    width: 100%;
 }
 .nav .logo-name a{
     display: flex;
@@ -58,5 +61,76 @@ a {
     }
     .mobile nav ul li {
         margin: 0;
+    }
+} /* header section ends here */
+
+/* main section */
+    /* banner section */
+main {
+    margin-top: 64px;
+}
+.banner-section {
+    flex-wrap: wrap;
+    justify-content: initial;
+    align-items: center;
+    background-color: rgb(236, 235, 235);
+}
+.banner-section .banner {
+    padding: 32px 24px;
+    width: 60%;
+}
+.banner-section .banner img {
+    width: 100%;
+    height: auto;
+}
+.banner-text {
+    display: flex;
+    direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    opacity: .9;
+    color: rgb(61, 60, 60);
+    width: 40%;
+    padding-right: 5px;
+}
+.banner-text h1 {
+    font-size: 3.2rem;
+}
+.banner-text h3 {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.banner-text .button {
+    margin: 60px 0;
+    width: 75%;
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+.banner-text .button p {
+    text-align: center;
+    margin: 8px auto;
+}
+@media only screen and (max-width:990px) {
+    .banner-text h1 {
+        font-size: 2.2rem;
+    }
+    .banner-text h3 {
+        font-size: 1.5rem;
+        margin-top: 32px;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .banner-section .banner {
+        width: 100%;
+        padding: 0;
+    }
+    .banner-section .banner-text {
+        width: 100%;
+        padding: 32px 16px;
+    }
+    .banner-text .button {
+        background-color: rgb(108, 109, 109);
+        width: 98%;
+        margin: 24px 0 0 0;
     }
 }
