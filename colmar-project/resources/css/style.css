@@ -75,46 +75,45 @@ main {
     align-items: center;
     background-color: rgb(236, 235, 235);
 }
-.banner-section .banner {
+.banner {
     padding: 32px 24px;
     width: 60%;
 }
-.banner-section .banner img {
+.banner img {
     width: 100%;
     height: auto;
 }
-.banner-text {
+.banner-details {
     display: flex;
-    direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    opacity: .9;
+    opacity: .95;
     color: rgb(61, 60, 60);
     width: 40%;
     padding-right: 5px;
 }
-.banner-text h1 {
-    font-size: 3.2rem;
+h1 {
+    font-size: 3.5rem;
 }
-.banner-text h3 {
+.banner-details h3 {
     font-size: 2rem;
     margin-top: 30px;
 }
-.banner-text .button {
+.banner-details .button {
     margin: 60px 0;
     width: 75%;
     background-color: rgb(44, 44, 44);
     color: white;
 }
-.banner-text .button p {
+.banner-details .button p {
     text-align: center;
     margin: 8px auto;
 }
 @media only screen and (max-width:990px) {
-    .banner-text h1 {
+    .banner-details h1 {
         font-size: 2.2rem;
     }
-    .banner-text h3 {
+    .banner-details h3 {
         font-size: 1.5rem;
         margin-top: 32px;
     }
@@ -124,13 +123,81 @@ main {
         width: 100%;
         padding: 0;
     }
-    .banner-section .banner-text {
+    .banner-section .banner-details {
         width: 100%;
         padding: 32px 16px;
     }
-    .banner-text .button {
+    .banner-details .button {
         background-color: rgb(108, 109, 109);
         width: 98%;
         margin: 24px 0 0 0;
+    }
+}
+
+    /* on-campus section */
+.on-campus {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.banner-talk h1 {
+    font-size: 2.32rem;
+}
+.banner-talk #quoto {
+    margin: 24px 0;
+}
+.on-campus-image {
+    width: 60%;
+}
+.on-campus-details {
+    width: 40%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 16px;
+}
+.on-campus-details .container {
+align-items: center;
+}
+.on-campus-details div .image {
+    padding: 16px;
+    width: 35%;
+    height: auto;
+}
+.on-campus-details div .image-detail {
+    width: 65%;
+}
+.on-campus-details div .image-detail h3 {
+    margin: 0;
+}
+.on-campus-details div .image-detail p {
+    margin: 8px 0;
+}
+.on-campus-details div .image-detail a {
+    color: blue;
+}
+.on-campus-details div img {
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width:999px) {
+    .banner-talk h1 {
+        font-size: 1.7rem;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .on-campus-details {
+        width:100%;
+        padding: 0;
+    }
+    .on-campus-details .container {
+        flex-direction: column;
+        margin-bottom: 64px;
+    }
+    .on-campus-details div .image {
+        width: 100%;
+    }
+    .on-campus-details div .image-detail {
+        width: 100%;
+        padding-left: 32px;
     }
 }
