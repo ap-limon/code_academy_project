@@ -332,7 +332,7 @@ align-items: center;
     height: auto;
     padding: 16px;
 }
-. .thesis-main .banner-details .container .image img {
+.thesis-main .banner-details .container .image img {
     max-width: 100%;
     height: auto;
 }
